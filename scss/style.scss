@@ -5,6 +5,8 @@ $font-heading: "Raleway", sans-serif;
 
 html {
     overflow-x: hidden;
+    height: 100%;
+    width: 100%;
 }
 body {
     background: $white;
@@ -109,7 +111,6 @@ header {
         border: 1px solid #ccc;
     }
     .navbar-brand {
-        text-transform: uppercase;
         letter-spacing: 0.2em;
         font-weight: 400;
         color: $white;
@@ -796,11 +797,9 @@ header {
 // Footer
 .site-footer {
     padding-top: 7em;
+    padding-bottom: 0.1em;
     background: #333;
-    // background: lighten($black, 15%);
 
-    // font-size: 13px;
-    // color: rgba(255,255,255,.5);
     p {
         color: rgba($white, 0.5);
         &:last-child {
@@ -1437,7 +1436,7 @@ figure {
 
 /**/
 
-.service-box {
+.vocation-box {
     text-align: center;
     .square-figure {
         width: 90px;
@@ -1465,13 +1464,22 @@ figure {
     }
 }
 
-.service {
+.vocation {
     .icon {
-        font-size: 2rem;
+        font-size: 4rem;
     }
     h3 {
         font-size: 1.2rem;
         font-weight: 400;
+    }
+    .flag {
+        width: 50px;
+        height: 32px;
+        border: solid 3px #6c757d;
+    }
+    .material-icons,
+    .material-icons-outlined {
+        font-size: 2rem;
     }
 }
 
@@ -1516,24 +1524,14 @@ figure {
     padding-bottom: 4rem;
 }
 
-.img-dotted-bg {
+.img-bg {
     position: relative;
     img {
         box-shadow: 10px 10px 0 0 #eee;
     }
-    &:after {
-        position: absolute;
-        content: "";
-        z-index: -1;
-        background: url("../images/dotted.jpg") repeat;
-        bottom: -50px;
-        right: -50px;
-        width: 200px;
-        height: 400px;
-    }
 }
 
-.portfolio-section {
+.workshop-section {
     background: #90a8af;
 }
 
@@ -1596,5 +1594,4 @@ figure {
     background: $black;
     display: inline-block;
     position: relative;
-    transform: translateX(-50%);
 }

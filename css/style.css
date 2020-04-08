@@ -8568,6 +8568,8 @@ h3 {
 }
 html {
   overflow-x: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 body {
@@ -8676,7 +8678,6 @@ header .navbar-toggler {
   border: 1px solid #ccc;
 }
 header .navbar-brand {
-  text-transform: uppercase;
   letter-spacing: 0.2em;
   font-weight: 400;
   color: #fff;
@@ -9320,6 +9321,7 @@ header .search-form .form-control:-moz-placeholder {
 
 .site-footer {
   padding-top: 7em;
+  padding-bottom: 0.1em;
   background: #333;
 }
 .site-footer p {
@@ -9927,10 +9929,10 @@ figure figcaption {
   }
 }
 /**/
-.service-box {
+.vocation-box {
   text-align: center;
 }
-.service-box .square-figure {
+.vocation-box .square-figure {
   width: 90px;
   height: 90px;
   border: 2px solid #20c997;
@@ -9941,7 +9943,7 @@ figure figcaption {
   margin-bottom: 2rem;
   background: #20c997;
 }
-.service-box .square-figure span {
+.vocation-box .square-figure span {
   display: block;
   font-size: 2rem;
   position: absolute;
@@ -9950,17 +9952,26 @@ figure figcaption {
   color: #fff;
   transform: translate(-50%, -50%) rotate(-45deg);
 }
-.service-box h3 {
+.vocation-box h3 {
   font-size: 1.2rem;
   font-weight: 300;
 }
 
-.service .icon {
-  font-size: 2rem;
+.vocation .icon {
+  font-size: 4rem;
 }
-.service h3 {
+.vocation h3 {
   font-size: 1.2rem;
   font-weight: 400;
+}
+.vocation .flag {
+  width: 50px;
+  height: 32px;
+  border: solid 3px #6c757d;
+}
+.vocation .material-icons,
+.vocation .material-icons-outlined {
+  font-size: 2rem;
 }
 
 .img-1,
@@ -10011,24 +10022,14 @@ figure figcaption {
   padding-bottom: 4rem;
 }
 
-.img-dotted-bg {
+.img-bg {
   position: relative;
 }
-.img-dotted-bg img {
+.img-bg img {
   box-shadow: 10px 10px 0 0 #eee;
 }
-.img-dotted-bg:after {
-  position: absolute;
-  content: "";
-  z-index: -1;
-  background: url("../images/dotted.jpg") repeat;
-  bottom: -50px;
-  right: -50px;
-  width: 200px;
-  height: 400px;
-}
 
-.portfolio-section {
+.workshop-section {
   background: #90a8af;
 }
 
@@ -10090,7 +10091,6 @@ figure figcaption {
   background: #000;
   display: inline-block;
   position: relative;
-  transform: translateX(-50%);
 }
 
 /*# sourceMappingURL=style.css.map */
